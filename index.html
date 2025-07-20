@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crystal Crafter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Login Modal -->
+  <div id="loginModal" style="display:none; position:fixed; top:0; left:0; 
+    width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:9999;">
+    <div style="background:white; width:300px; margin:10% auto; padding:20px; border-radius:10px; text-align:center;">
+      <h3>Login Required</h3>
+      <input type="text" id="modalUsername" placeholder="Username"><br><br>
+      <input type="password" id="modalPassword" placeholder="Password"><br><br>
+      <button onclick="handleLogin(
+        document.getElementById('modalUsername').value,
+        document.getElementById('modalPassword').value
+      )">Login</button>
+      <button onclick="closeLoginModal()" style="margin-left:10px;">Cancel</button>
+    </div>t 
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Crystal Crafter</h1>
+    <nav>
+      <a id="loginLink" href="login.html">Login</a>
+      <a id="logoutLink" href="#" style="display:none;" onclick="logout()">Logout</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <p id="greeting" style="margin: 0; font-size: 16px;"></p>
+  </header>
+
+  <!--  Categories -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <a class="cat" href="bangles.html">
+        <img src="https://banglesforangelsuk.com/cdn/shop/products/image_3c590922-9f3a-4288-8cc4-01ee4057a20c_1946x.jpg?v=1675294670" alt="Bangles" />
+        <p>Bangles</p>
+      </a>
+      <a class="cat" href="decorative.html">
+        <img src="https://images.thdstatic.com/productImages/8b2cfa78-769a-43f3-91d8-ef47c0cf3146/svn/gold-chandeliers-ym-cry252-64_1000.jpg" alt="Decorative" />
+        <p>Decorative</p>
+      </a>
+      <a class="cat" href="vases.html">
+        <img src="http://www.bohaglass.co.uk/wp-content/uploads/2014/01/Lagoon_art_glass_vases.jpg" alt="Vases" />
+        <p>Vases</p>
+      </a>
+      <a class="cat" href="lamps.html">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.UYLH4kbzIqkNU-zcuD5I_wHaHa?pid=Api" alt="Lamps" />
+        <p>Lamps</p>
+      </a>
+    </div>
+  </section>
+
+  <!--  About Us -->
+  <section id="about" class="info-box">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Crystal Crafter</strong>, we believe every home deserves a touch of elegance and every person deserves a hint of sparkle.
+      We are an online store dedicated to offering a curated collection of exquisite glass bangles, decorative items, vases, and lamps — all handcrafted with passion and precision.
+    </p>
+    <p>
+      Our mission is to support local artisans and preserve the rich tradition of glass and crystal craftsmanship. Each product is thoughtfully
+      designed to blend timeless beauty with modern taste, making it the perfect gift or home décor piece.
+    </p>
+  </section>
+
+  <!--  Contact -->
+  <section id="contact" class="info-box">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> hifzanaz@gamil.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> Firozabad, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Crystal Crafter</p>
+  </footer>
+
+  <!--  Scripts -->
+  <script src="script.js"></script>
+
+  <!-- Login/Logout-->
+  <script>
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const loginLink = document.getElementById("loginLink");
+    const logoutLink = document.getElementById("logoutLink");
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    
+    
+  </script>
+</body>
+</html>

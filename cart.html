@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Crystal Crafter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Shopping Cart</h1>
+    <nav><a href="index.html">Home</a></nav>
+  </header>
+
+  <!-- ✅ Updated container ID to match script -->
+  <section id="cart-container"></section>
+
+  <section id="total">
+    <h2>Total: ₹<span id="total-price">0</span></h2>
+  </section>
+
+  <!-- ✅ Go to Payment Button -->
+  <section style="text-align: center; margin: 20px;">
+    <button id="goToPaymentBtn" style="padding: 10px 20px; font-size: 16px;">Go to Payment</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Crystal Crafter</p>
+  </footer>
+
+  <!-- ✅ Load cart rendering logic -->
+  <script src="cart.js"></script>
+
+  <!-- ✅ Go to Payment Button Script -->
+  <script>
+    document.getElementById("goToPaymentBtn").addEventListener("click", function () {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+      }
+
+      const isLoggedIn = localStorage.getItem("isLoggedIn");
+      if (isLoggedIn !== "true") {
+        alert("Please log in to proceed to payment.");
+        window.location.href = "login.html";
+        return;
+      }
+
+      window.location.href = "payment.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #232f3e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 0.5rem 1rem;
+  background: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.categories, .products {
+  text-align: center;
+  padding: 20px;
+}
+
+.category-grid, .product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cat, .product {
+  width: 200px;
+  cursor: pointer;
+}
+
+.cat img, .product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cat p, .product p {
+  background: #eee;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+footer {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  height: 80px;
+  object-fit: cover;
+}
+
+.cart-item button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.about-box {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fefefe;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c9d6ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-box h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #bbd0ff;
+  padding-bottom: 10px;
+}
+.info-box {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c9d6ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.info-box h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #bbd0ff;
+  padding-bottom: 10px;
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bangles - Crystal Crafter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Bangles</h1>
+    <nav><a href="index.html">Home</a> | <a href="cart.html">🛒 Cart</a></nav>
+  </header>
+
+  <section class="products">
+    <div class="product-grid">
+      <div class="product"><img src="https://m.media-amazon.com/images/I/91wb3ZoGG7L._SY695_.jpg"><p>₹49</p><button onclick="addToCart('Red Bangles', 49, 'https://m.media-amazon.com/images/I/91wb3ZoGG7L._SY695_.jpg')">Add to Cart</button></div>
+      <div class="product"><img src="https://m.media-amazon.com/images/I/61Ff6Z0ObZL._SY695_.jpg"><p>₹39</p><button onclick="addToCart('Simple Bangles', 39, 'https://m.media-amazon.com/images/I/61Ff6Z0ObZL._SY695_.jpg')">Add to Cart</button></div>
+      <div class="product"><img src="https://m.media-amazon.com/images/I/61b46dA8UBL._SY625_.jpg"><p>₹99</p><button onclick="addToCart('Gold Bangles', 99, 'https://m.media-amazon.com/images/I/61b46dA8UBL._SY625_.jpg')">Add to Cart</button></div>
+      <div class="product"><img src="https://m.media-amazon.com/images/I/41MKYnL1ZSL.jpg"><p>₹49</p><button onclick="addToCart('Pink Glass Bangle', 49, 'https://m.media-amazon.com/images/I/41MKYnL1ZSL.jpg')">Add to Cart</button></div>
+      <div class="product"><img src="https://m.media-amazon.com/images/I/510fifBYm1L.jpg"><p>₹79</p><button onclick="addToCart('Shiny Green Bangle', 79, 'https://m.media-amazon.com/images/I/510fifBYm1L.jpg')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2022/9/JR/WQ/QY/26438279/ladies-diamond-glass-bangles-1000x1000.jpg"><p>₹59</p><button onclick="addToCart('Diamond Glass Bangles', 59, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://www.fashioncrab.com/wp-content/uploads/2024/03/Red-Glass-Bangles-for-Women-02.jpg"><p>₹99</p><button onclick="addToCart('Red Fashion Bangles', 99, 'https://www.fashioncrab.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://rosinjewellery.com/cdn/shop/files/IMG-20240802_151021.jpg?v=1722592174&width=1206"><p>₹59</p><button onclick="addToCart('Rosin Bangles', 59, 'https://rosinjewellery.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/12/367945049/TJ/XZ/OW/18645300/img-20231201-wa0080-1000x1000.jpeg"><p>₹99</p><button onclick="addToCart('Elegant Glass Bangles', 99, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://static-01.daraz.pk/p/2664385035d286c51fee22c49ee46be5.jpg"><p>₹29</p><button onclick="addToCart('Budget Bangles', 29, 'https://static-01.daraz.pk/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/8/333347625/EO/FN/YQ/163038679/round-stone-work-red-glass-bangles-set-500x500.jpg"><p>₹39</p><button onclick="addToCart('Stone Work Bangles', 39, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/11/361826903/ZF/RP/KB/23000604/glass-bangles-1000x1000.jpeg"><p>₹79</p><button onclick="addToCart('Classic Glass Bangles', 79, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297708430/HA/PV/TS/158073455/velvet-round-glass-bangle-1000x1000.jpg"><p>₹69</p><button onclick="addToCart('Velvet Glass Bangles', 69, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/12/367945004/TO/RA/SE/18645300/img-20231201-wa0084-1000x1000.jpeg"><p>₹49</p><button onclick="addToCart('Colorful Bangles', 49, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2022/6/VB/KN/VR/44673424/round-glass-bangles-1000x1000.jpg"><p>₹99</p><button onclick="addToCart('Round Glass Bangles', 99, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2022/12/MU/BJ/UK/161892722/beaded-glass-bangle-set-1000x1000.jpg"><p>₹59</p><button onclick="addToCart('Beaded Bangle Set', 59, 'https://5.imimg.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://n1.sdlcdn.com/imgs/j/m/h/Unique-Glass-Bangle-for-Women-SDL267526301-1-9f342.jpg"><p>₹49</p><button onclick="addToCart('Unique Glass Bangle', 49, 'https://n1.sdlcdn.com/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://static-01.daraz.pk/p/306dbc5e2dd85e2d68cf7e795429d4a5.jpg"><p>₹79</p><button onclick="addToCart('Stylish Bangles', 79, 'https://static-01.daraz.pk/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://static-01.daraz.pk/p/f83e04cf8a5ef4d4fe49af187f3ee44d.jpg"><p>₹89</p><button onclick="addToCart('Glossy Bangles', 89, 'https://static-01.daraz.pk/...')">Add to Cart</button></div>
+      <div class="product"><img src="https://n1.sdlcdn.com/imgs/j/l/i/Designer-Bridal-Glass-Bangle-Kada-SDL563787878-1-91256.jpg"><p>₹29</p><button onclick="addToCart('Bridal Kada Set', 29, 'https://n1.sdlcdn.com/...')">Add to Cart</button></div>
+    </div>
+  </section>
+
+  <footer><p>&copy; 2025 Crystal Crafter</p></footer>
+
+  <script>
+    function addToCart(productName, price, image) {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ name: productName, price: price, image: image });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(`${productName} added to cart!`);
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
